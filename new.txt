@@ -1,0 +1,20 @@
+#include<stdio.h>    
+int fact(int n)
+{    
+    int x=1;    
+
+    while(n>1)    
+    {    
+        x=n*fact(n-1);    
+    }    
+
+    return(x);    
+}    
+
+void main()    
+{    
+    int n,fact1;    
+    scanf("%d",&n);    
+    fact1=fact(n);    
+    printf("%d",fact1);    
+}
